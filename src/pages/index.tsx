@@ -1,16 +1,12 @@
 import { type NextPage } from "next";
-import Head from "next/head";
 import Calendar from "../components/calendar";
+import Header from "../components/header";
 
 const Home: NextPage = () => {
 
   return (
     <>
-      <Head>
-        <title>Restaurant Booking | Open</title>
-        <meta name="description" content="Booking software for our restaurant" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Header heading="Cool Restaurant | Open" />
       <main className="">
         <Calendar />
       </main>
